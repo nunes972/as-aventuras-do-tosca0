@@ -3,15 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minha Aventura</title>
     <link rel="stylesheet" href="style.css">
+    <title>Em busca da cidade perdida</title>
 </head>
 <body>
-    <h1>Crie Sua Aventura</h1>
-    <p id="historia">...</p>
-    <div id="opcoes">
+    <main>
+        <div class="passo ativo" id="passo-0">
+            <img src="img/cenario-passo0.png" alt="Cenário inicial da aventura">
+            <p>Um dia desses, dentro de um livro da biblioteca da escola, eu descobri uma carta antiga sobre uma cidade perdida...</p>
+            <button class="btn-proximo" data-proximo="1">Rio de Janeiro</button>
+            <button class="btn-proximo" data-proximo="2">Pernambuco</button>
         </div>
 
+        <div class="passo" id="passo-11">
+            <img src="img/cenario-passo11-cidade-perdida.png" alt="A cidade perdida no Amazonas">
+            <p>Dentro da cidade perdida, você descobre tesouros inimagináveis e decide se dedicar a estudar e preservar este lugar</p>
+        </div>
+        
+    </main>
     <script src="script.js"></script>
 </body>
 </html>
