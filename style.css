@@ -1,33 +1,73 @@
+/* Reset básico para melhor controle */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bai Jamjuree', sans-serif; /* Use a fonte que você incluiu */
+}
+
 body {
-    background-color: #1D4221;
-    color: white;
-    font-family: "Bai Jamjuree", sans-serif;
+    background-color: #0d1117; /* Fundo escuro */
+    color: #c9d1d9; /* Texto claro */
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 700px;
-    margin: 0;
-}
-
-button {
-    background-color: #64A712;
-    color: white;
-    font-family: "Bai Jamjuree", sans-serif;
-}
-
-.passo {
-    display: none;
-}
-
-.passo.ativo {
-    display:block;
+    min-height: 100vh;
+    padding: 20px;
 }
 
 main {
-    text-align: center;
-    max-width: 90%;
+    max-width: 600px;
+    width: 100%;
+    border: 2px solid #238636; /* Borda com cor de destaque */
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(35, 134, 54, 0.5);
+    overflow: hidden;
+    position: relative;
+    padding: 20px;
 }
 
-img {
-    max-width: 90%;
+/* Esconde todos os passos por padrão */
+.passo {
+    display: none;
+    text-align: center;
+}
+
+/* Mostra APENAS o passo ativo */
+.passo.ativo {
+    display: block;
+}
+
+.passo img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #30363d;
+}
+
+.passo p {
+    margin-bottom: 30px;
+    font-size: 1.1em;
+    line-height: 1.5;
+}
+
+.btn-proximo {
+    background-color: #238636;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.2s, transform 0.1s;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.btn-proximo:hover {
+    background-color: #2ea043;
+    transform: translateY(-2px);
 }
